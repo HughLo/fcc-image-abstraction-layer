@@ -1,0 +1,14 @@
+{
+  "name": "fcc-image-abstrction",
+  "version": "1.0.0",
+  "description": "FCC practice project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hugh lo",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.13.4"
+  }
+}
