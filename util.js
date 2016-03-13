@@ -2,17 +2,9 @@ var fs = require('fs');
 
 var Util = function() {
     if(!(this instanceof Util)) return new Util();
-};
 
-Util.prototype.configObject = function(callback) {
-    fs.readFile("./config", function(err, data) {
-        if(err) {
-            callback(err);
-            return;
-        }
-        
-        
-    });
+    var data = fs.readFileSync("./config");
+    this.ConfigObject = JSON.parse(data.toString("utf8"));
 };
 
 module.exports = Util;
