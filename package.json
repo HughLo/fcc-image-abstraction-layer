@@ -9,6 +9,7 @@
   "author": "hugh lo",
   "license": "ISC",
   "devDependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "mongodb": "^2.1.7"
   }
 }

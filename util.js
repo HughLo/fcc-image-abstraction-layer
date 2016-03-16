@@ -7,4 +7,21 @@ var Util = function() {
     this.ConfigObject = JSON.parse(data.toString("utf8"));
 };
 
+Util.prototype = {
+    constructor: Util,
+    MakeDBOption: function() {
+        if(process.env.MONGOLAB_URI) {
+            return {
+                connString: process.env.MONGOLAB_URI
+            };
+        } else {
+            return {
+                host: "localhost",
+                port: 20202,
+                dbName: "image-search"
+            };
+        }
+    }  
+};
+
 module.exports = Util;
